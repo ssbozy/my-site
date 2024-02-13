@@ -1,0 +1,32 @@
+---
+eleventyComputed: metadata.title
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+
+<div class="notice">
+    <h3> Things I live for </h3>
+        <ul>
+            <li> Learning/Reading/Writing about code </li>
+            <li> Caring for my family </li>
+            <li> Food and cooking </li>
+            <li> Minimalism and clean aesthetics </li>
+            <li> Making a positive impact in the world </li>
+        </ul>
+    <h3> Contact </h3>
+        <ul>
+            <li> My email is <a href=mailto:hello@sandilya.com>hello@sandilya.com</a> </li>
+            <li> Here is my <a href="https://www.linkedin.com/in/sandilya-bhamidipati/">LinkedIn</a> and <a href="https://twitter.com/iamsandilya">Twitter</a> </li>
+        </ul>
+</div>
+
+{% set maxPosts = collections.posts.length | min(3) %}
+<h2>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h2>
+
+{% set postslist = collections.posts | head(-3) %}
+{% set postslistCounter = collections.posts | length %}
+{% include "postslist.njk" %}
+
+<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>

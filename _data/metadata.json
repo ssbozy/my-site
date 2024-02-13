@@ -1,0 +1,21 @@
+{
+  "title": "Sandilya Bhamidipati",
+  "url": "https://www.sandilya.com/",
+  "language": "en",
+  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "feed": {
+    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://www.sandilya.com/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://www.sandilya.com/feed/feed.json"
+  },
+  "author": {
+    "name": "Sandilya Bhamidipati",
+    "email": "hello@sandilya.com",
+    "url": "https://sandilya.com/about/"
+  }
+}
